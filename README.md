@@ -1,4 +1,4 @@
-# ai-resume-builder
+# Ai-resume-builder
 AI-Powered Resume Builder Application: A cutting-edge tool that leverages artificial intelligence to create professional, tailored resumes effortlessly.
 # Features
 🧠 AI-Powered Suggestions: Generate personalized resume sections based on your job title, skills, and experience.
