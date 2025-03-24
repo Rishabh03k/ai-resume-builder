@@ -1,23 +1,104 @@
-# Ai-resume-builder
-AI-Powered Resume Builder Application: A cutting-edge tool that leverages artificial intelligence to create professional, tailored resumes effortlessly.
-# Features
-🧠 AI-Powered Suggestions: Generate personalized resume sections based on your job title, skills, and experience.
-🎨 Customizable Templates: Choose from a variety of modern and professional templates to make your resume stand out.
-⚡ Real-Time Feedback: Receive AI-driven tips and suggestions to enhance clarity, grammar, and content quality.
-📁 Easy Import/Export: Upload your existing resume or export your final draft in multiple formats (PDF, Word).
-🌍 Multilingual Support: Build resumes in various languages to cater to global job markets.
-🔍 Job-Specific Customization: Tailor your resume to specific job descriptions for better alignment.
-# Technologies Used
-Frontend: React.js / Angular for a seamless user interface.
-Backend: Node.js / Django for managing user data and processing AI requests.
-AI Models: GPT-based AI for text generation and enhancement.
-Database: MongoDB / PostgreSQL for secure storage of user resumes and data.
-Deployment: Hosted on AWS / Google Cloud / Azure for scalability and reliability.
-# Contributions
-We welcome contributions! Feel free to open issues, submit pull requests, or suggest new features. Check out our Contributing Guide.
-# License
-This project is licensed under the MIT License.
-# Demo
-🌟 Try it Live: AI Resume Builder Demo
+# AI Resume Builder
 
-Let me know if you'd like help refining this further!
+An AI-powered resume builder that provides intelligent suggestions to enhance your resume content. Users can enter their experience, and the system generates ATS-friendly descriptions using AI.
+
+## 🚀 Features
+- AI-powered resume suggestions
+- Pre-built resume templates
+- User-friendly UI with React & Tailwind CSS
+- FastAPI backend for AI suggestions
+- NLP model trained for resume generation
+- Cloud deployment for scalability
+
+## 🛠️ Tech Stack & Tools
+
+### **Frontend:**
+- **React.js** - UI framework
+- **Tailwind CSS** - Styling framework
+- **Vercel** - Deployment for frontend
+
+### **Backend:**
+- **FastAPI** - API framework
+- **Uvicorn** - ASGI server for FastAPI
+- **PyTorch** - Deep learning framework
+- **Transformers (Hugging Face)** - Pre-trained NLP models
+
+### **NLP Model:**
+- **T5 (Text-to-Text Transformer)** - Fine-tuned for resume suggestions
+- **Hugging Face Datasets** - Dataset management
+- **Tokenizers** - Text tokenization
+
+### **Cloud Deployment:**
+- **Google Cloud Run** - Deploying backend API
+- **Firebase** - Authentication & database
+- **Google Cloud Storage** - Storing AI models
+
+### **Database:**
+- **PostgreSQL (Cloud SQL)** - Storing user resumes
+- **MongoDB (optional)** - NoSQL alternative for resumes
+
+## 📂 Project Structure
+```
+/ai-resume-builder
+│── frontend/             # React frontend
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+│── backend/              # FastAPI backend
+│   ├── main.py           # API server
+│   ├── model.py          # AI model logic
+│   ├── requirements.txt
+│
+│── models/               # Trained AI models
+│
+│── dataset/              # Training datasets
+│
+│── README.md             # Project documentation
+```
+
+## 🔧 Installation & Setup
+
+### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/your-username/ai-resume-builder.git
+cd ai-resume-builder
+```
+
+### **2️⃣ Setup Backend**
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+### **3️⃣ Setup Frontend**
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### **4️⃣ Train AI Model (Optional)**
+```bash
+python train_model.py
+```
+
+## 🚀 Deployment
+
+### **1️⃣ Deploy Backend to Google Cloud Run**
+```bash
+gcloud run deploy ai-resume-backend --source .
+```
+
+### **2️⃣ Deploy Frontend to Vercel**
+```bash
+vercel --prod
+```
+
+## 💡 Contribution
+Feel free to contribute by opening issues or submitting PRs!
+
+## 📄 License
+MIT License.
+
